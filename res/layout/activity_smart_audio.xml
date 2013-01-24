@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+    
+	    <EditText android:id="@+id/edit_server_ip"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/edit_server" />
+	    
+	    <EditText android:id="@+id/edit_server_port"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/edit_port" />
+	    
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    	android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >    
+	    
+	    <Button
+	        android:id="@+id/button_connect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_connect" />
+	    
+	    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="0dp" />
+	    
+    </LinearLayout>
+
+    
+
+    <ListView
+        android:id="@+id/applianceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+    </ListView>
+
+</LinearLayout>

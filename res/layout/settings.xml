@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<RadioGroup android:id="@+id/soundSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/soundAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alarm" />
+ 
+        <RadioButton
+            android:id="@+id/blip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blip" 
+            android:checked="true" />
+        
+        <RadioButton
+            android:id="@+id/clong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clong" />
+ 
+    
+</RadioGroup>
+
+</LinearLayout>
